@@ -1,0 +1,184 @@
+abandon: leave behind  
+ability: power to do something  
+absent: not present  
+absolute: complete  
+accept: agree to take  
+accurate: correct  
+achieve: succeed  
+active: energetic  
+admire: respect  
+admit: confess  
+advance: move forward  
+advice: helpful suggestions  
+affect: influence  
+afraid: feeling fear  
+after: following  
+against: in opposition  
+agree: share the same opinion  
+alike: similar  
+allow: permit  
+alone: by oneself  
+already: before now  
+also: in addition  
+always: at all times  
+amaze: surprise  
+ancient: very old  
+angry: displeased  
+animal: living creature  
+answer: response  
+anyway: in any case  
+appear: come into view  
+apply: put to use  
+argue: exchange opposing views  
+arrive: reach a destination  
+ask: make a request  
+assist: help  
+assume: take for granted  
+attend: be present  
+aware: knowledgeable  
+basic: fundamental  
+begin: start  
+believe: accept as true  
+beyond: farther than  
+bitter: unpleasantly sharp  
+brave: courageous  
+bright: shining  
+broad: wide  
+calm: peaceful  
+careful: cautious  
+cause: reason  
+change: make different  
+choose: select  
+clear: easy to understand  
+close: near  
+common: usual  
+complete: finished  
+confuse: mix up  
+connect: join  
+consider: think about  
+continue: keep going  
+control: manage  
+cool: moderately cold  
+create: make something new  
+damage: harm  
+decide: make a choice  
+delight: great pleasure  
+demand: require  
+deny: refuse to acknowledge  
+different: not the same  
+difficult: hard to do  
+discuss: talk about  
+distant: far away  
+diverse: varied  
+dream: hope or imagine  
+early: before the usual time  
+easy: not hard  
+empty: having nothing inside  
+enough: adequate  
+enjoy: take pleasure in  
+event: occurrence  
+exact: precise  
+excited: enthusiastic  
+fail: not succeed  
+famous: well known  
+fast: quick  
+fear: worry about danger  
+feel: experience an emotion  
+few: not many  
+find: discover  
+follow: come after  
+forget: fail to remember  
+friendly: kind and pleasant  
+fun: enjoyable  
+future: time ahead  
+gain: obtain  
+genuine: real  
+good: favorable  
+grand: impressive  
+great: excellent  
+hard: not soft  
+happy: feeling joy  
+harm: damage  
+help: assist  
+honest: truthful  
+hope: desire for something  
+identify: recognize  
+ignore: pay no attention  
+important: significant  
+increase: make larger  
+inspire: motivate  
+introduce: present  
+invited: asked to join  
+join: connect  
+joke: humorous statement  
+just: fair  
+keep: retain  
+kind: considerate  
+lack: shortage  
+learn: acquire knowledge  
+leave: go away  
+let: allow  
+like: similar to  
+live: exist  
+long: extended duration  
+love: deep affection  
+make: create  
+mean: intend  
+meet: encounter  
+miss: fail to see  
+move: change position  
+name: title  
+need: require  
+notice: observe  
+offer: propose  
+open: not closed  
+order: arrange  
+plan: scheme  
+play: engage in activity  
+point: indicate  
+prepare: get ready  
+promise: assure  
+protect: guard  
+prove: demonstrate  
+provide: supply  
+quick: fast  
+read: interpret written words  
+remember: recall  
+repeat: do again  
+rest: relax  
+reveal: show  
+right: correct  
+safety: protection  
+search: look for  
+select: choose  
+send: transmit  
+serve: assist  
+set: place  
+share: divide  
+shout: speak loudly  
+show: display  
+simple: easy  
+spend: use time or money  
+stand: be upright  
+start: begin  
+stop: cease  
+study: learn about  
+suggest: propose  
+take: grab  
+talk: converse  
+tell: inform  
+think: ponder  
+treat: behave towards  
+turn: rotate  
+understand: grasp meaning  
+use: employ  
+value: worth  
+visit: go to see  
+wait: remain in place  
+walk: move on foot  
+want: desire  
+watch: look at  
+win: succeed in a contest  
+work: engage in activity  
+worry: be anxious  
+write: compose text

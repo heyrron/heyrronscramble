@@ -1,0 +1,207 @@
+/* Reset default margins and paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full height for HTML and body */
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7; /* Soft background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background styling */
+body {
+    background: linear-gradient(to right, #4CAF50, #8BC34A); /* Smooth gradient */
+}
+
+/* Main container styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header styling */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff5722;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 10px #FFEB3B; /* Add glowing effect */
+    transform: rotateY(20deg); /* Slight 3D effect */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    font-size: 36px;
+    color: #2E7D32;
+}
+
+/* Input field styling */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+    outline: none;
+}
+
+/* Button styling */
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    background-color: #2E7D32;
+    transform: scale(1);
+}
+
+/* Result message styling */
+.result {
+    font-size: 20px;
+    color: #333;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInResult 1s forwards;
+}
+
+.result.correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.result.incorrect {
+    color: #F44336;
+    font-weight: bold;
+}
+
+/* Meaning message styling */
+.meaning {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeInMeaning 1s forwards;
+}
+
+.meaning.correct {
+    color: #4CAF50;
+}
+
+.meaning.incorrect {
+    color: #F44336;
+}
+
+/* Score display styling */
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInResult {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInMeaning {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3D Word Animation */
+#scrambled-word.new-word {
+    animation: bounceIn 0.6s ease-out;
+}
+
+/* Bounce Animation */
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heyrron Word Scramble Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='challenge.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Heyrron Scramble</h2>
+        <hr>
+        
+        <!-- Difficulty Selector -->
+        <form id="difficulty-form">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="standard" {% if session['difficulty'] == 'standard' %}selected{% endif %}>Standard</option>
+                <option value="advanced" {% if session['difficulty'] == 'advanced' %}selected{% endif %}>Advanced</option>
+            </select>
+            <input type="submit" value="Set Difficulty" class="submit-button">
+        </form>
+
+        <p>Score: <span id="score">{{ score }}</span></p>
+
+        <h1>Unscramble the word: <span id="scrambled-word" class="new-word">{{ scrambled_word }}</span></h1>
+        <form action="/submit" method="post">
+            <input type="hidden" name="word" value="{{ word }}">
+            <input type="text" name="user_input" placeholder="Enter your answer" class="input-field" required>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+
+        <p class="result">{{ result }}</p>
+        <p class="meaning">{{ meaning }}</p> <!-- Displays the meaning after submission -->
+
+        <button id="next-word" class="submit-button">Next Word</button>
+    </div>
+
+    <script>
+        document.getElementById('difficulty-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            fetch('/set-difficulty', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    location.reload();  // Reload the page to apply difficulty change
+                }
+            });
+        });
+
+        document.getElementById('next-word').addEventListener('click', function() {
+            fetch('/next-word')
+                .then(response => response.json())
+                .then(data => {
+                    let wordElement = document.getElementById('scrambled-word');
+                    wordElement.classList.remove('new-word');  // Remove animation class
+                    setTimeout(() => wordElement.classList.add('new-word'), 10);  // Add animation class with delay
+
+                    wordElement.innerHTML = data.scrambled_word;
+                    document.querySelector('input[name="word"]').value = data.word;
+                });
+        });
+
+        // Automatically fetch a new word on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('next-word').click();
+        });
+    </script>
+</body>
+</html>
